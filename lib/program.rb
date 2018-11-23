@@ -1,12 +1,20 @@
 require 'date'
 
-tyrants = ["Dave", "Edwin", "Phil", "Kevin", "Julian", "Ste", "Steve"]
+startDate = Date.today
+
+# optionally pass in a start date e.g. Nov or August
+for arg in ARGV
+   startDate = Date.parse(arg)
+end
+
+#puts startDate
+
+tyrants = ["Dan", "Dave", "Edwin", "Phil", "Kevin", "Julian", "Ste", "Steve"]
 
 tyrants = tyrants.shuffle
 
-mydate = Date.today
 
-tyrants.each { |t| 
-puts "%s is tyrant for %s" % [t, mydate.strftime("%B")]
-mydate = mydate >> 1
+tyrants.each { |t|
+puts "%s is tyrant for %s" % [t, startDate.strftime("%B")]
+startDate = startDate >> 1
 }
