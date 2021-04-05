@@ -9,7 +9,7 @@ end
 
 #puts startDate
 
-tyrants = ["Dave", "Edwin", "Phil", "Kevin","James", "Julian", "Ste", "Steve"]
+tyrants = ["Dave", "Edwin", "Phil", "Kevin", "Julian", "Ste", "Steve"]
 
 tyrants = tyrants.shuffle
 
